@@ -20,6 +20,10 @@ function main() {
     //linha 7
 
     calculadora(2,"*",4);
+
+    //linha 8
+
+    
 }
 
 function mesPorExtenso(numeroMes) {
