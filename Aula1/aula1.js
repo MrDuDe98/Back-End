@@ -2,14 +2,24 @@ function notaFinal(notaP1, notaP2, notaP3){
     return (notaP1 * 0.3) + (notaP2 * 0.3) + (notaP3 * 0.4);
 }
 
-function main() {    
+function main() { 
+    //Linha 5
+    
     var notaF = notaFinal(12, 12, 13);
     console.log(notaF);
     if (notaF < 9.5){
         console.log("Reprovado!");
     }else {
         console.log("Aprovado");
-    } 
+    }
+
+    //Linha 6
+
+    mesPorExtenso(0);
+
+    //linha 7
+
+    calculadora(2,"*",4);
 }
 
 function mesPorExtenso(numeroMes) {
@@ -56,6 +66,25 @@ console.log(mesExtenso);
 }
 
 
+function calculadora(valor1, simbolo, valor2){
+    var resultado;
+    if(simbolo == "+"){
+        resultado = valor1 + valor2;
+    }else if (simbolo == "-"){
+        resultado = valor1 - valor2;
+    }else if (simbolo == "*"){
+        resultado = valor1 * valor2;
+    }else if (simbolo == "/"){
+        resultado = valor1 / valor2;
+    }else if (simbolo == "^"){
+        resultado = Math.pow(valor1,valor2);
+    }else{
+        resultado= valor1 ,"?", valor2;
+    }
+    console.log(resultado)
+}
+
+
 //INLINE
 main();
-mesPorExtenso(0);
+
