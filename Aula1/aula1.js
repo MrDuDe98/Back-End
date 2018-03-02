@@ -17,9 +17,11 @@ function main() {
 
     mesPorExtenso(0);
 
-    //linha 7
+    //Linha 7
 
     calculadora(2,"*",4);
+
+    //Linha 8
 }
 
 function mesPorExtenso(numeroMes) {
