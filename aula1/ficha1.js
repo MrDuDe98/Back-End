@@ -26,6 +26,14 @@ function main() {
     //linha 9
 
     soma();
+
+    //linha10
+
+    factorial(3);
+
+    //linha11
+
+    maximo(15,20,25,50);
 }
 
 //linha5
@@ -79,7 +87,7 @@ console.log(mesExtenso);
 //linha7
 function calculadora(valor1, simbolo, valor2){
     var resultado;
-    if(simbolo == "+"){
+    if (simbolo == "+"){
         resultado = valor1 + valor2;
     }else if (simbolo == "-"){
         resultado = valor1 - valor2;
@@ -92,27 +100,79 @@ function calculadora(valor1, simbolo, valor2){
     }else{
         resultado= valor1 ,"?", valor2;
     }
-    console.log(resultado)
+console.log(resultado);
 }
 
 //linha8
 function multiplos5(){
     var resultado = '';
-    for(var i=1; i<=20; i++){
-            if(i % 5 == 0){
+    for (var i=1; i<=20; i++){
+            if ( i % 5 == 0 ){
             resultado += i+ ';';
             }
         }
-    console.log(resultado)
+console.log(resultado);
 }
 //linha9
 function soma(){
-    var resultado;
-    for(var i=1; i<=100; i++){
+    var resultado = null;
+    for ( var i=1; i<=100; i++ ){
         resultado += i;
     }
-    console.log("A Soma dos 100 primeiros numeros interios é", resultado)
+console.log("A Soma dos 100 primeiros numeros inteiros é", resultado);
 }
+
+//linha10
+function factorial (n) {
+    var total = 1; 
+    for (i=1; i<=n; i++) {
+        total = total * i; 
+    }
+console.log (total); 
+}
+
+//linha11
+function maximo(n1, n2, n3, n4){
+    var max;
+    var min;
+    var med;
+
+    //max
+    if (n1 > n2 && n1 > n2 && n1 > n3 && n1 > n4){
+        max = n1;
+    }
+    if (n2 > n1 && n2 > n3 && n2 > n4){
+        max = n2;
+    }
+    if (n3 > n1 && n3 > n2 && n3 > n4 ){
+        max = n3;
+    }
+    if (n4 > n2 && n4 > n2 && n4 > n3 ){
+        max = n4;
+    }
+
+    //min
+    if (n1 < n2 && n1 < n2 && n1 < n3 && n1 < n4){
+        min = n1;
+    }
+    if (n2 < n1 && n2 < n3 && n2 < n4){
+        min = n2;
+    }
+    if (n3 < n1 && n3 < n2 && n3 < n4 ){
+        min = n3;
+    }
+    if (n4 < n2 && n4 < n2 && n4 < n3 ){
+        min = n4;
+    }
+    
+    //med
+    med = (n1 + n2 + n3 + n4) / 4;
+
+console.log("O máximo é:",max)
+console.log("O minimo é:",min)
+console.log("A média é:",med)
+}
+
 
 //INLINE
 main();
