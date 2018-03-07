@@ -1,6 +1,4 @@
-function notaFinal(notaP1, notaP2, notaP3){
-    return (notaP1 * 0.3) + (notaP2 * 0.3) + (notaP3 * 0.4);
-}
+
 
 function main() { 
     //Linha 5
@@ -24,6 +22,7 @@ function main() {
     //Linha 8
 }
 
+//linha 6
 function mesPorExtenso(numeroMes) {
     var mesExtenso;
     switch (numeroMes){
@@ -67,7 +66,7 @@ function mesPorExtenso(numeroMes) {
 console.log(mesExtenso);
 }
 
-
+//linha7
 function calculadora(valor1, simbolo, valor2){
     var resultado;
     if(simbolo == "+"){
@@ -86,6 +85,7 @@ function calculadora(valor1, simbolo, valor2){
     console.log(resultado)
 }
 
+//linha8
 
 //INLINE
 main();
