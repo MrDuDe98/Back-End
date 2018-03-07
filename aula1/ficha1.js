@@ -17,13 +17,21 @@ function main() {
 
     //Linha 7
 
-    calculadora(2,"*",4);
+    calculadora(2,"^",4);
 
     //Linha 8
 
     multiplos5();
+
+    //linha 9
+
+    soma();
 }
 
+//linha5
+function notaFinal(notaP1, notaP2, notaP3){
+    return (notaP1 * 0.3) + (notaP2 * 0.3) + (notaP3 * 0.4);
+}
 //linha 6
 function mesPorExtenso(numeroMes) {
     var mesExtenso;
@@ -89,13 +97,21 @@ function calculadora(valor1, simbolo, valor2){
 
 //linha8
 function multiplos5(){
-    var resultado;
-    for(int=1; i<=30; i++){
-        if(i % 5 == 0){
-            resultado= resultado + ',' + i;
+    var resultado = '';
+    for(var i=1; i<=20; i++){
+            if(i % 5 == 0){
+            resultado += i+ ';';
+            }
         }
-    }
     console.log(resultado)
+}
+//linha9
+function soma(){
+    var resultado;
+    for(var i=1; i<=100; i++){
+        resultado += i;
+    }
+    console.log("A Soma dos 100 primeiros numeros interios é", resultado)
 }
 
 //INLINE
