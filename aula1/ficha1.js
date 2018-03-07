@@ -20,6 +20,8 @@ function main() {
     calculadora(2,"*",4);
 
     //Linha 8
+
+    multiplos5();
 }
 
 //linha 6
@@ -86,6 +88,15 @@ function calculadora(valor1, simbolo, valor2){
 }
 
 //linha8
+function multiplos5(){
+    var resultado;
+    for(int=1; i<=30; i++){
+        if(i % 5 == 0){
+            resultado= resultado + ',' + i;
+        }
+    }
+    console.log(resultado)
+}
 
 //INLINE
 main();
