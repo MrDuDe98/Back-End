@@ -5,7 +5,12 @@ function main(){
     imc(80,1.40);
 
     //linha 2
+
     inverso("ola mundo");
+
+    //linha 3
+
+    vogais("ooooooo");
 }
 
 //Linha1
@@ -34,6 +39,20 @@ function inverso(frase){
     
 
 console.log(fraseInv);
+}
+
+//linha3
+function vogais(frase){
+    var totalVogais = 0;
+    var l = frase.length -1;
+    var leter;
+    for(i=0; i <= l; i++){
+        letter = frase.charAt(i);
+        if(leter == "a" || leter == "e" || leter == "i" || leter == "o" || leter == "u" ){
+            totalVogais += 1;
+        }
+    }
+console.log(totalVogais);
 }
 
 //INLINE
