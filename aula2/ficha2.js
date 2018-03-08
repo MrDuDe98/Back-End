@@ -46,7 +46,7 @@ function vogais(frase){
     var totalVogais = 0;
     var l = frase.length -1;
     var leter;
-    for(i=0; i <= l; i++){
+    for(var i=0; i <= l; i++){
         letter = frase.charAt(i);
         if(leter == "a" || leter == "e" || leter == "i" || leter == "o" || leter == "u" ){
             totalVogais += 1;
