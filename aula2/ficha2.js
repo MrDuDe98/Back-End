@@ -45,11 +45,10 @@ console.log(fraseInv);
 function vogais(frase){
     var totalVogais = 0;
     var l = frase.length -1;
-    var leter;
+    var strInfo = new InfoString();
     for(var i=0; i <= l; i++){
-        letter = frase.charAt(i);
-        if(leter == "a" || leter == "e" || leter == "i" || leter == "o" || leter == "u" ){
-            totalVogais += 1;
+        if(strInfo.isLetter(frase.charAt(i))){
+            totalVogais ++;
         }
     }
 console.log(totalVogais);
