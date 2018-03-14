@@ -6,10 +6,17 @@ var greetWorld = function() {
 }
 
 function log(fn){
-    return greetMe;
+    console.log("Invocação")
+    fn();
 }
 
 
 greetMe();
 greetWorld();
 log(greetMe);
+log(greetWorld);
+
+var msg = require('./Log.js');
+
+msg.log1.info('Hello Word');
+msg.log2.update('Toop')
