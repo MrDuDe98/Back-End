@@ -1,4 +1,4 @@
-var log2 ={
+var log2 = {
     update: function(update) {
         console.log('Update: ' + update);
     }
