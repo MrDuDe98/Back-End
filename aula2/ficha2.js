@@ -10,7 +10,12 @@ function main(){
 
     //linha 3
 
-    vogais("ooooooo");
+    vogais("ola euueuu");
+
+    //linha 4
+
+    frase("quantas vezes tem esta frase a letra", "a");
+
 }
 
 //Linha1
@@ -42,17 +47,31 @@ console.log(fraseInv);
 }
 
 //linha3
-function vogais(frase){
+function vogais(texto){
     var totalVogais = 0;
-    var l = frase.length -1;
-    var strInfo = new InfoString();
-    for(var i=0; i <= l; i++){
-        if(strInfo.isLetter(frase.charAt(i))){
-            totalVogais ++;
-        }
+    texto.toLowerCase();
+    for( i = 0;i < texto.length; i++){
+        c = texto.charAt(i);
+        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' )
+            totalVogais++;
     }
 console.log(totalVogais);
 }
+
+
+//linha4
+function frase(frase, letra){
+    var totalLetra = 0;
+    for(i = 0; i < frase.length; i++){
+        c = frase.charAt(i);
+        if(c == letra){
+            totalLetra++
+        }
+    }
+    console.log(totalLetra);
+}
+
+//linha5
 
 //INLINE
 main();
