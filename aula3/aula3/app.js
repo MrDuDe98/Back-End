@@ -36,20 +36,22 @@ console.log("Esta vazia? ", isEmpty);
 
 // numero maximo dentro do array
 var maxArray = msg.utils.maxArray(a);
-console.log("Maior numero do array: ",maxArray)
+console.log("Maior numero do array: ",maxArray);
 //***************************************
 
 // numero minimo dentro do array
 var minArray = msg.utils.minArray(a);
-console.log("Menor numero do array: ",minArray)
+console.log("Menor numero do array: ",minArray);
 //*************************************** 
 
 // media da array
 var medArray = msg.utils.medArray(a);
-console.log("Media do array: ",medArray)
+console.log("Media do array: ",medArray);
 //***************************************
 
 // Indice de um determinado elemento no array
+var element = msg.utils(a, b);
+console.log("O indice do elemento",b,"e",element);
 
 //posicao de um valor dentro da array, se existe devolve a posiçao, se nao devolve -1
 

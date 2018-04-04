@@ -47,6 +47,10 @@ var utils = {
             i++;
         }
         return soma/tamanho;
+    },
+
+    element: function(array,indece){
+        
     }
 
 }
