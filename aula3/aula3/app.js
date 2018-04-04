@@ -50,7 +50,7 @@ console.log("Media do array: ",medArray);
 //***************************************
 
 // Indice de um determinado elemento no array
-var element = msg.utils(a, b);
+var element = msg.utils.element(a, b);
 console.log("O indice do elemento",b,"e",element);
 
 //posicao de um valor dentro da array, se existe devolve a posiçao, se nao devolve -1
